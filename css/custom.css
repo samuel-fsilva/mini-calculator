@@ -1,0 +1,138 @@
+.info {
+  border: 1.4px solid rgba(255, 255, 255, 0.137);
+  transition: 0.35s;
+  width: 350px;
+  height: 560px;
+  margin-left: 50px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+#informacoes {
+  border-radius: 60px;
+  position: relative;
+  background: linear-gradient(
+    90deg,
+    rgba(204, 201, 201, 0.1) 50%,
+    rgba(212, 212, 212, 0.027) 100%
+  );
+  backdrop-filter: blur(25px);
+  color: white;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#informacoes button {
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.13) 100%
+  );
+  color: white;
+  border: 1px solid gray;
+  float: right;
+  margin: 20px;
+  border-radius: 20px;
+}
+#informacoes h5 {
+  font-size: large;
+}
+#informacoes #h51,
+#h501 {
+  margin-top: 100px;
+}
+#informacoes #h52,
+#h502 {
+  margin-top: 14px;
+}
+#informacoes p {
+  padding: 20px;
+}
+#radicandoimagem,
+#indiceimagem {
+  width: 80px;
+}
+#potenciaimagem {
+  width: 120px;
+}
+.erroanimation {
+  color: rgb(180, 0, 0);
+}
+.openmenu {
+  background-color: rgba(255, 255, 255, 0.089);
+  backdrop-filter: blur(20px);
+  border: 1px solid gray;
+  color: white;
+  position: relative;
+  z-index: 9;
+  float: left;
+  font-family: "Digital 7", Times, serif;
+}
+.desaparecerbotao {
+  display: none;
+}
+.menuopened {
+  position: relative;
+  z-index: 10;
+  width: 24%;
+  height: 100vh;
+  background-color: rgba(129, 129, 129, 0.288);
+  backdrop-filter: blur(50px);
+  font-family: "Digital 7", Times, serif;
+}
+.blurcontent {
+  filter: blur(15px);
+}
+.blurwallpaper {
+  backdrop-filter: blur(30px);
+}
+#fecharmenu {
+  float: right;
+  background-color: rgba(82, 255, 47, 0.055);
+  border: 1px solid rgba(143, 255, 120, 0.226);
+  color: rgba(143, 255, 120, 0.87);
+}
+.corrigircontent {
+  bottom: 100vh;
+  left: -1vh;
+}
+#menutitle {
+  color: white;
+  float: left;
+  margin-left: 6px;
+  display: block;
+}
+#menuoptions {
+  display: grid;
+  grid-template-rows: 8vh 8vh 8vh 8vh 8vh;
+  background-color: transparent;
+  width: 97%;
+  height: 84vh;
+}
+.menuoption {
+  color: white;
+  text-align: start;
+  font-size: 26px;
+  font-weight: 400;
+  margin-left: 8px;
+}
+.menuoption a {
+  color: white;
+  text-decoration: none;
+  transition: 0.18s;
+}
+.menuoption a:hover {
+  color: rgb(204, 204, 204);
+}
+.menuoption a:active {
+  color: rgb(126, 126, 126);
+}
+.menuoption a img {
+  position: relative;
+  top: 5px;
+  width: 35px;
+  margin-right: 12px;
+}
+@media (max-width: 450px) {
+  .menuopened {
+    width: 60%;
+  }
+}

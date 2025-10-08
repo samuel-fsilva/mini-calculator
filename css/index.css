@@ -1,0 +1,282 @@
+* {
+  text-align: center;
+  margin: 0;
+}
+.padrao {
+  background: url(https://i.pinimg.com/originals/c5/9a/d2/c59ad2bd4ad2fbacd04017debc679ddb.gif);
+}
+.buraconegro {
+  background: url(https://www.feis.unesp.br/Home/departamentos/fisicaequimica/gaais/buraco-negra.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body {
+  overflow: hidden;
+  width: 100%;
+}
+@font-face {
+  font-family: "Digital 7";
+
+  src: url(../font/ww_digital/wwDigital.ttf) format("truetype");
+}
+#menubutton img {
+  width: 35px;
+  position: relative;
+  top: 0.5vh;
+  color: #56ff89;
+}
+#content {
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  z-index: 1;
+  right: 8vh;
+  height: 100vh;
+}
+#calcbody {
+  border: 1.4px solid rgba(255, 255, 255, 0.137);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(
+    90deg,
+    rgba(204, 201, 201, 0.1) 50%,
+    rgba(212, 212, 212, 0.027) 100%
+  );
+  backdrop-filter: blur(25px);
+  min-height: 560px;
+  max-height: 600px;
+  width: 400px;
+  border-radius: 40px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.resul {
+  display: flex;
+  justify-content: center;
+  background: rgba(10, 10, 10, 0.815);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.33);
+  border-left: 1px solid rgba(255, 255, 255, 0.33);
+  min-height: 72px;
+  max-width: 370px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+#bar {
+  height: 32px;
+  width: 6px;
+  background-color: rgb(108, 240, 0);
+  border-radius: 0;
+  margin-top: 12px;
+  margin-left: 4px;
+  animation-name: pisca;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes pisca {
+  from {
+    background: rgba(34, 34, 34, 0);
+  }
+  49.9% {
+    background: rgba(34, 34, 34, 0);
+  }
+  50.1% {
+    background-color: rgb(108, 240, 0);
+  }
+  to {
+    background-color: rgb(108, 240, 0);
+  }
+}
+#resuloutput {
+  font-family: "Digital 7", Times, serif;
+  display: inline;
+  text-align: center;
+  color: rgb(108, 240, 0);
+  font-size: 29px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+div,
+input,
+button {
+  border-radius: 10px;
+}
+input {
+  color: rgb(108, 240, 0);
+  font-family: "Digital 7", Times, serif;
+  width: 150px;
+  min-height: 40px;
+  margin: 10px;
+  font-size: 20px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-left: 1px solid rgba(255, 255, 255, 0.329);
+  border-right: 1px solid rgba(255, 255, 255, 0.329);
+  background-color: rgba(0, 0, 0, 0.589);
+}
+.labelinput {
+  width: 158px;
+  display: block;
+  z-index: 99;
+  margin: 10px;
+  position: relative;
+  bottom: 18px;
+  cursor: pointer;
+}
+#label_input1 {
+  float: left;
+}
+#label_input2 {
+  float: right;
+}
+button {
+  min-width: 55px;
+  height: 55px;
+  font-size: 20px;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-top: 1vh;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.filabotao {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 6px;
+}
+#buttonbody {
+  border-right: 1px solid rgba(255, 255, 255, 0.38);
+  border-left: 1px solid rgba(255, 255, 255, 0.38);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.048);
+  margin-bottom: 25px;
+  border-radius: 25px;
+  padding-top: 75px;
+  padding-bottom: 35px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 10px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.graybutton {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.541);
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.13) 100%
+  );
+  color: white;
+  font-size: 24px;
+}
+#limpar,
+#troca {
+  color: #a5ffc0;
+  border: 2px solid #56ff89;
+  font-size: 28px;
+  font-family: "Digital 7", Times, serif;
+  border-radius: 18px;
+  width: 160px;
+  background-color: #00ff7352;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  margin-top: 20px;
+}
+button:hover {
+  transform: scale(0.98);
+}
+button:active {
+  position: relative;
+  background-color: #56ff8944;
+  transform: scale(0.92);
+  color: white;
+}
+#indiceraiz {
+  font-size: 10px;
+  position: relative;
+  bottom: 2.3vh;
+  left: 0.5vw;
+}
+
+@keyframes botaosair {
+  from {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(2deg);
+  }
+  75% {
+    transform: rotate(-2deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+#exiticon {
+  width: 40px;
+  height: 40px;
+}
+.spanbutton {
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.6);
+  font-family: "Digital 7", Times, serif;
+  font-weight: 500;
+}
+.infospan {
+  color: white;
+}
+
+@media (max-width: 450px) {
+  #content {
+    height: 105vh;
+    width: 100%;
+    position: relative;
+    right: 0;
+    margin: auto;
+  }
+  #calcbody {
+    min-height: 85vh;
+    width: 96%;
+    position: relative;
+    bottom: 11vh;
+    transform: scale(0.9);
+  }
+  #voltarpaginicial {
+    display: none;
+  }
+  #buttonbody {
+    min-height: 30vh;
+    max-height: 41vh;
+    width: 92.5vw;
+    margin: 3.5px;
+    margin-bottom: 3vh;
+  }
+  #menubutton {
+    transform: scale(0.8);
+  }
+  .labelinput {
+    display: none;
+  }
+}
+@media (max-width: 350px) {
+  input,
+  .resul {
+    transform: scale(0.85);
+  }
+  .resul {
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+  input {
+    margin: 0;
+  }
+}
