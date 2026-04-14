@@ -57,7 +57,7 @@ cd mini-calculator
 ## 📂 Project Structure
 
 ```
-project/
+Mini Calculator/
 │── css/
 │   └── custom.css
 │   └── index.css
