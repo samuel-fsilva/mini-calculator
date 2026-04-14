@@ -8,7 +8,7 @@
 
 ![Preview](./img/screenshots/image.png)
 ![Preview](./img/screenshots/image2.png)
-Live Demo: <site-link>
+Live Demo: https://samuel-fsilva.github.io/mini-calculator/
 
 ---
 
